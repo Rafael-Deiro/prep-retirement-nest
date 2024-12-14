@@ -1,3 +1,23 @@
+
+# PREP Retirement API
+
+This is the PREP Retirement app API built with Nest.js
+
+## How do I run this?
+This project already has `Docker` and `Docker Compose`. Just start it with:
+```bash
+docker compose up -d
+```
+
+## Current tech stack
+- Nest.js 10.4
+- Node.js 22.14
+- PostgreSQL 17.2
+
+
+> <small>Don't mind the Nest.js default readme below, I'll remove it later.</small>
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>

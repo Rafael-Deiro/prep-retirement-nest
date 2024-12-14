@@ -1,0 +1,33 @@
+name: prep-retirement-nest
+
+services:
+  nestjs:
+    container_name: prep-retirement-nest
+    build:
+      context: .
+      dockerfile: ./.docker/nestjs/Dockerfile
+    restart: always
+    volumes:
+      - ./:/var/www/app
+    ports:
+      - "1509:3000"
+    networks:
+      - prep-retirement-network
+  postgres:
+    container_name: prep-retirement-pgsql
+    image: postgres:17.2-alpine
+    restart: always
+    shm_size: 128mb
+    environment:
+      POSTGRES_USER: retiredearly
+      POSTGRES_PASSWORD: imnotthatold
+      POSTGRES_DB: postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
+
+networks:
+  prep-retirement-network:
+    driver: bridge
