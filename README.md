@@ -14,9 +14,11 @@ docker compose up -d
 - Node.js 22.14
 - PostgreSQL 17.2
 
+<br>
 
 > <small>Don't mind the Nest.js default readme below, I'll remove it later.</small>
 
+---
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
